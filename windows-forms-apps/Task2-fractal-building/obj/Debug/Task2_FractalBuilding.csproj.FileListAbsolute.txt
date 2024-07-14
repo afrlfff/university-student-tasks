@@ -1,0 +1,11 @@
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\bin\Debug\Task2_FractalBuilding.exe.config
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\bin\Debug\Task2_FractalBuilding.exe
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\bin\Debug\Task2_FractalBuilding.pdb
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.csproj.AssemblyReference.cache
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.MainForm.resources
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.Properties.Resources.resources
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.csproj.GenerateResource.cache
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.csproj.CoreCompileInputs.cache
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.exe
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.pdb
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task2_FractalBuilding\obj\Debug\Task2_FractalBuilding.ProjectSettingsForm.resources

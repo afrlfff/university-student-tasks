@@ -1,0 +1,11 @@
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\bin\Debug\Task1_trajectory_movement.exe.config
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\bin\Debug\Task1_trajectory_movement.exe
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\bin\Debug\Task1_trajectory_movement.pdb
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.csproj.AssemblyReference.cache
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.Form1.resources
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.Properties.Resources.resources
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.csproj.GenerateResource.cache
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.csproj.CoreCompileInputs.cache
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.exe
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.pdb
+C:\Users\DNS\Documents\Alexander_Frolov\программы ЛЭТИ\2_year\Учебная_практика_C++\Task1_trajectory_movement\obj\Debug\Task1_trajectory_movement.SettingsForm.resources
