@@ -1,0 +1,2 @@
+g++ Test.cpp -o bin\Test.exe
+g++ TimeMeasuring.cpp -o bin\TimeMeasuring.exe

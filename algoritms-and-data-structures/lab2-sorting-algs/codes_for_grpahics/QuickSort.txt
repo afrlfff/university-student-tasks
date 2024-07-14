@@ -1,0 +1,81 @@
+filename = "QuickSort.txt"
+times_for_result_graphic = [[] for i in range(len(sortTypes))]
+funcs_for_result_graphic = [[] for i in range(len(sortTypes))]
+
+for sortType in sortTypes:
+
+    # ===== File opening ===== #
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    path = "..\\results_txt\\" + sortType + "\\" + filename
+    file_path = os.path.join(current_dir, path)
+    file = open(file_path, 'r')
+
+    # ===== Reading measured times ===== #
+    times = [(float(line)) for line in file.readlines()]
+    times_for_result_graphic[sortTypes.index(sortType)] = times
+
+
+    # ========================================= #
+    # ===== Calculating data for plotting ===== #
+    plt.plot(SIZES, times, marker='.', color='b', label = 'experimantal')
+
+    if (sortType == "SortedArray"):
+        k = float(times[1] / 740) # Coefficient before x
+        equation = make_string_equation(k, "x", 12) # equation for output
+        func = [k*x for x in SIZES] # Array to plot approximating funtion
+        funcs_for_result_graphic[sortTypes.index(sortType)] = func
+    
+    if (sortType == "AlmostSortedArray"):
+        k = float(times[1] / 760)
+        equation = make_string_equation(k, "x", 13) # equation for output
+        func = [k*x for x in SIZES] # Array to plot approximating funtion
+        funcs_for_result_graphic[sortTypes.index(sortType)] = func
+
+    if (sortType == "BackSortedArray"):
+        k = float(times[1] / 830) # Coefficient before x
+        equation = make_string_equation(k, "x", 11) # equation for output
+        func = [k*x for x in SIZES] # Array to plot approximating funtion
+        funcs_for_result_graphic[sortTypes.index(sortType)] = func
+
+    if (sortType == "RandomArray"):
+        k = float(times[1] / 670)
+        equation = make_string_equation(k, "x", 12) # equation for output
+        func = [k*x for x in SIZES] # Array to plot approximating funtion
+        funcs_for_result_graphic[sortTypes.index(sortType)] = func
+
+    # ====================================== #
+    # ====== PLOTTING SINGLE GRAPHICS ====== #
+
+    plt.plot(SIZES, func, color = 'r', label='theoretical')
+    plt.title(START_BOLD + filename[:-4] + END_BOLD + " on " +
+                START_BOLD + sortType + END_BOLD + ".\n" +
+                START_BOLD + "Approximating" + END_BOLD + " " +
+                START_BOLD + "function (red): " + END_BOLD +
+                equation)
+    plt.xlabel("Size")
+    plt.ylabel("Time [seconds]")
+    plt.legend()
+    #plt.show()
+    plt.savefig(current_dir + "\\..\\graphics\\" + sortType + "\\" + filename[:-4] + ".png")
+    plt.clf()
+
+    # ====================================== #
+    # ====== PLOTTING RESULT GRAPHIC ======= #
+
+    if (sortType == "RandomArray"): # if this is the last iteration
+        colors = ["#32CD32", "#98FB98", "r", "#F0E68C"]
+        for i in range(len(sortTypes)):
+            plt.plot(SIZES, times_for_result_graphic[i],
+                        marker='.', color = colors[i], label=sortTypes[i])
+            #plt.plot(SIZES, funcs_for_result_graphic[i], color = 'r')
+
+        plt.title(START_BOLD + filename[:-4] + END_BOLD + " on " +
+                    START_BOLD + "All Arrays" + END_BOLD + ".\n")
+        plt.xlabel("Size")
+        plt.ylabel("Time [seconds]")
+        plt.legend()
+        #plt.show()
+        plt.savefig(current_dir + "\\..\\graphics\\OnePictureForAllArrays\\" + filename[:-4] + ".png")
+        plt.clf()
+
+    file.close()
