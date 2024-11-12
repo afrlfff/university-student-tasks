@@ -1,10 +1,7 @@
 .vscode
-bin/*
-!bin/.gitkeep
 output/*
 !output/.gitkeep
 src/__pycache__/
 src/*.exe
 src/tempCodeRunnerFile.cpp
-src/temp.cpp
 src/temp.py
