@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 import image_utils as iu
 
-def preprocess(input_path, output_path):
+def preprocess(input_path, output_path, Q):
     """
     Perform JPEG preprocessing on a raw image file to prepare it for entropy coding.
 
@@ -53,7 +53,7 @@ def preprocess(input_path, output_path):
     cr_blocks = np.array([iu.dct(block) for block in cr_blocks])
 
     # quantization
-    quantization_matrix = iu.calculate_quantization_matrix(50)
+    quantization_matrix = iu.calculate_quantization_matrix(Q)
     y_blocks = np.array([iu.quantize(block, quantization_matrix) for block in y_blocks]).astype(np.int8)
     cb_blocks = np.array([iu.quantize(block, quantization_matrix) for block in cb_blocks]).astype(np.int8)
     cr_blocks = np.array([iu.quantize(block, quantization_matrix) for block in cr_blocks]).astype(np.int8)
@@ -81,9 +81,9 @@ def preprocess(input_path, output_path):
                 f.write(coeff.tobytes())
 
 
-def restore(input_path, output_path):
+def restore(input_path, output_path, Q):
     """
-    Perform JPEG postprocessing on a binary file obtained from entropy decoding to recover the original raw image.
+    Perform JPEG postprocessing on a binary file obtained from entropy decoding to recover the original jpeg image.
 
     Args:
         input_path (str): The path to the binary file obtained from entropy decoding.
@@ -130,7 +130,7 @@ def restore(input_path, output_path):
     cr_blocks = np.array([iu.zigzag_traversal_inverse(traversal) for traversal in cr_zigzags]).astype(np.int8)
 
     # dequantization
-    quantization_matrix = iu.calculate_quantization_matrix(50)
+    quantization_matrix = iu.calculate_quantization_matrix(Q)
     y_blocks = np.array([iu.dequantize(block, quantization_matrix) for block in y_blocks])
     cb_blocks = np.array([iu.dequantize(block, quantization_matrix) for block in cb_blocks])
     cr_blocks = np.array([iu.dequantize(block, quantization_matrix) for block in cr_blocks])

@@ -1,1 +1,3 @@
 .vscode
+.src/image_utils/__pycache__
+.src/jpeg_compressor/__pycache__
