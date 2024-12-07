@@ -1,13 +1,6 @@
 import numpy as np
 
-# целевая функция
-def f(x): return 2*(x**2) - 9*x - 31
-
-# производная целевой функции
-def df(x): return 4*x - 9
-
-# метод золотого сечения
-def gsearch(interval, tol):
+def gsearch(f, interval, tol):
     a = interval[0]
     b = interval[1]
     phi = (1 + np.sqrt(5)) / 2
@@ -41,13 +34,3 @@ def gsearch(interval, tol):
     fmin = f1
 
     return xmin, fmin, neval, coord
-
-# входные переменные
-a = -2
-b = 10
-
-interval = [a, b] # поисковый интервал
-tol = 1e-10 # заданная точность.
-
-answer_ = gsearch(interval, tol)
-print(answer_)
